@@ -1,1 +1,5 @@
-You log goes in this  file.
+Start: Sun, 25 Jan 2015 14:42:26 -0800
+End: Wed, 7 Jan 2015 15:42:26 -0800
+Tasks: During this period I set up my repository cloned the files and tried to figure out how I was going to modify the code and run the test.
+
+
