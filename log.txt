@@ -2,4 +2,16 @@ Start: Sun, 25 Jan 2015 14:42:26 -0800
 End: Sun, 25 Jan 2015 15:42:26 -0800
 Tasks: During this period I set up my repository cloned the files and tried to figure out how I was going to modify the code and run the test.
 
+Start: Sat, 31 Jan 2015 12:00:26 -0800
+End: Sat, 31 Jan 2015 17:42:26 -0800
+Tasks: Spent the time coding first half of Assignment 3. Not finished yet
+
+Start: Sat, 31 Jan 2015 18:30:26 -0800
+End: Sat, 31 Jan 2015 0:37:26 -0800
+Tasks: Finally finished part 1. This was horrible! And part 2 is worse yet!
+
+
+Start: Sun, 31 Jan 2015 14:30:26 -0800
+End: Sat, 31 Jan 2015 9:37:26 -0800
+Tasks: Worked on part 2 of assignment. Took breaks. Tried to get help. Finally gave up! There must be a better way than this!
 

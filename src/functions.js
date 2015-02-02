@@ -51,9 +51,9 @@ bar = function double(doubleArray) {
 * @property {string} message - the commit message
 */
 function GitLog(hash, date, message) {
-    this.hash = hash;
-    this.date = date;
-    this.message = message;
+  this.hash = hash;
+  this.date = date;
+  this.message = message;
 }
 
 /**
@@ -77,20 +77,34 @@ function GitLog(hash, date, message) {
 
 //your code here
 function parseGit(logArray) {
-  var log = new Gitlog();
-  for (var i = 0; i < logArray.length; i++) {
-  	var temp = logArray.[i].split(" ");
-  	log[i].hash = temp[0];
-  	log[i].date = temp[1] + " " + temp[2] + " " + temp[3] + " " + temp[4] + " " temp[5] + " " + temp[6] + " " + temp[7];
-  	log[i].message = "\""
-  	for (var j = 8; j < temp.length; j++) {
-  		if (j < temp.length - 1) {
-  		  log[i].message += temp[j] + " ";
-  		}else{
-  		  log[i].message += temp[j] 
-  		}  		
-  	}  	
+  var temp;
+  var git;
+  var res = [];
+  var i;
+  var j;
+  var val1;
+  var val2;
+  var val3;
+  
+  
+  for (i = 0; i < logArray.length; i++) {
+    temp = logArray[i].split(" ");
+    val1 = temp[0];
+    val2 = temp[1] + " " + temp[2] + " " + temp[3] + " " + temp[4] + " " + temp[5] + " " + temp[6];
+    val3 = "";
+    for (j = 7; j < temp.length; j++) {
+      if(j === temp.length - 1) {
+        val3 += temp[j];
+      }else {
+        val3 += temp[j] + " ";
+      }     
+    }
+    val2 = new Date(val2);
+    val3 = val3.replace("\"","");
+    val3 = val3.replace("\"","");
+    git = new GitLog(val1, val2, val3);
+    res.push(git);
   }
-  return log;
+  return res;
 }
 //end your code
