@@ -33,9 +33,10 @@ var barType = typeof bar;
 
 //your code here
 bar = function double(doubleArray) {
-  for (var i = 0; i < doubleArray.length; i++) {
-  	doubleArray[i] *= 2;
-  	if (isNaN(doubleArray[i])) {
+  var i;
+  for (i = 0; i < doubleArray.length; i++) {
+     doubleArray[i] *= 2;
+  	 if (isNaN(doubleArray[i])) {
   		return false;
   	}
   }

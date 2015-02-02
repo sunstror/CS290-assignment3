@@ -10,7 +10,8 @@
 
 function returnObjectLiteral() {
   //your code here
-  return {type: "Goldfish", brand: "Pepperidge Farm", flavor: "Cheddar", count: 2000} //Modify ONLY this line
+  return {type: "Goldfish", brand: "Pepperidge Farm",
+    flavor: "Cheddar", count: 2000};
   //end your code
 }
 
@@ -46,24 +47,23 @@ function MessageLog(user) {
   this.sentMessage = [];
   this.dir;
   this.message;
-  
-  this.logMessage = function(messageText, direction){
+  this.logMessage = function (messageText, direction) {
     this.message = messageText;
     this.dir = direction;
-    if (this.dir == 0) {
-    	this.sentMessage.unshift(this.message);
-    	this.sent++;
-    	if (this.sent > 5) {
-    		this.sentMessage.pop();
-    	}
-    	return this.sentMessage;
-    }else if (this.dir == 1) {
-    	this.recMessage.unshift(this.message);
-    	this.received++;
-    	if (this.received > 5) {
-    		this.recMessage.pop();
-    	}
-    	return this.recMessage;
+    if (this.dir === 0) {
+      this.sentMessage.unshift(this.message);
+      this.sent++;
+      if (this.sent > 5) {
+        this.sentMessage.pop();
+      }
+      return this.sentMessage;
+    } if (this.dir === 1) {
+      this.recMessage.unshift(this.message);
+      this.received++;
+      if (this.received > 5) {
+        this.recMessage.pop();
+      }
+      return this.recMessage;
     }
   }
   this.getSentMessage = function(n) {
